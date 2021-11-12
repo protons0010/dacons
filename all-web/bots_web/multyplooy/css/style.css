@@ -1,0 +1,358 @@
+$body-bg:#333;
+$font-color:#fff;
+$primary-color:#008ed6;
+*/
+
+body{
+	margin-top:90px;
+}
+
+html{scroll-behavior: smooth;box-sizing: border-box;}
+
+/*start header contact*/
+/*.location {
+    display: flex;
+    flex-direction: row;
+}
+
+i.fas.fa-plane-departure.d-inline {
+    font-size: 28px;
+    padding: 6px 7px;
+}
+
+.col-md-12.header-contact {
+    background-color: #48dbfb;
+    padding: 20px;
+    color: #fff;
+}
+i.fas.fa {
+    font-size: 20px;
+    padding: 0px 5px;
+}
+
+i.fas.fa-id-badge {
+    font-size: 20px;
+    padding: 0px 5px;
+}
+.col-md-6 {
+    float: right;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+i.fas.fa-envelope-open-text {
+    padding: 0px 5px;
+}*/
+/*end header contact*/
+/*End navbar or mobile menu design*/
+.navbar{
+ 
+box-shadow:2px 2px 5px #3292a6;
+ 
+background:#fff;
+ 
+opacity:0.9;
+}
+
+.nav-item{
+	font-size: 18px;
+	padding-right:20px;
+	font-weight: 500;
+	font-style: bold;
+}
+
+.nav-item:last-child{
+	padding-right:0;
+}
+
+/*.nav-link{
+	color:#252525;
+}
+
+.nav-link:hover{
+	color:#48dbfb;
+}*/
+
+/*End navbar or mobile menu design*/
+.col-md-6 {
+    float: left;
+}
+
+.col-md-6.d-inline {
+    float: left;
+}
+
+ 
+
+#home{background-image:top-right(#48dbfb,#48dbfb)}
+
+.card-body {color: #fff;}
+
+.card-body:hover{background: #48dbfb;color: #123;font-size:20px;}
+
+.card-body i{font-size:65px;}
+
+section#get_started {
+    background-image: linear-gradient(#000000ad,#00090a91),url(image/hasan.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-position: center right;
+    color: #fff;
+}
+
+#get_started img{width:50px;height:50px;}
+
+
+#gallery img{width:200px;height:200px;}
+
+
+/*About page*/
+#about_Section{
+	background-image:url(image/cool-background.png);
+	background-color:#202627cc;
+	background-size:cover;
+	background-repeat:no-repeat;
+	padding:100px 0px 75px 0px;
+	color:#fff;
+}
+
+#team{background-color:#123;}
+
+#team i{font-size:20px;}
+
+#Testimonial{background-color:#111;}
+
+#pricing_section i{font-size:13px;padding:5px;}
+
+#service_section{
+	background:#122;
+	padding:50px 0px 80px 0px;
+}
+
+#faq{
+	background-color:#111;
+	padding:30px 0px 50px 0px;
+}
+
+
+/*custom Design by rahat ahmed in 2021*/
+
+
+
+
+/*=====================================
+End services section design here 
+Start home page service section design 
+=====================================*/
+
+#services{
+	background: #150d0df2;
+}
+
+h6.text-services {
+    color: #48dbfb;
+    text-align: center;
+    width: 100%;
+}
+
+p.textOffer {
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0px 20px;
+}
+.col-md-12 {
+    display: flex;
+}
+.work{
+  width: calc(33% - 10px);
+  overflow: hidden;
+
+  margin: 10px 0;
+  cursor: pointer;
+  /*position: relative;*/
+border-radius: 5px;
+box-shadow: inset 15px -15px 30px #363933,
+            inset -15px 15px 30px #bcc5af;}
+
+.work img{
+  width: 100%;
+  height: 100%;
+  transition: .4s linear;
+}
+.work::before{
+  content: "";
+  /*position: absolute;*/
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: .2s linear;
+  opacity: 2;
+  /*transform: scale(0);*/
+}
+
+.work .info{
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  left: 40px;
+  color: #fff;
+  transition: .4s linear;
+  opacity: 4;
+}
+button.read-more {
+    margin-top: 30px;
+    background: none;
+    color: #48dbfb;
+    text-decoration: underline;
+    border: none;
+}
+
+.cat {
+    text-align: left;
+}
+.work:hover img{
+  transform: scale() rotate(25deg);
+}
+
+.work:hover::before,
+.work:hover .info
+{
+  opacity: 7;
+  transform: scale(0.9) rotate(6deg);
+}
+
+
+
+
+/*=====================================
+End home page service section design
+start service pages dsign
+==============================*/
+
+.col-md-3 {
+    display: inline-grid;
+}
+
+button.btn, .btn-light {
+    border: 1px solid #48dbfb;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.btn:hover{
+	background: #48dbfb;
+}
+
+
+h6.text-intro {
+    font-size: 21px;
+    padding: 30px;
+    color: #48dbfb;
+    letter-spacing: 5px;
+}
+
+section#about {
+    background: black;
+    padding: 30px;
+}
+
+.paragraph{
+	color: #fff;
+}
+
+p.text-headingtwo {
+    font-size: 34px;
+    color: #fff;
+}
+
+/*start footer contact section design from here */
+
+.footer-contact{
+	 background-color: #25408F;color: #fff;
+}
+.footer-contact a{
+	color: #fff;
+}
+
+/*start about page contact section design*/
+
+
+.contact-section{background:#313840;padding:80px 0;text-align: center;}
+
+.inner-width{max-width: 600px;margin:auto;padding:0 20px;}
+
+.contact-section h1{font-size:20px;color:#888;margin-bottom:40px;
+	text-transform:uppercase;letter-spacing: 4px;font-weight: 400;}
+
+
+.name,.email,.message{background:none;border:none;outline: none;
+		border-bottom:1px solid;color:#888;padding:10px 6px;font-size:14px;margin-bottom:40px;}
+
+
+
+.name{float: left;width:270px;margin-right:20px;}
+	
+
+.email{float:left;width:270px;}	
+
+.message{min-width: 100%;max-width:100%;}
+
+
+.contact-section button{background:none;color:#70a1ff;border:1px solid #70a1ff;
+
+padding:12px 40px;border-radius: 8px;text-transform:uppercase;font-size:14px;
+transition:0.4s linear;cursor:pointer;}
+
+.contact-section button:hover{background:#70a1ff;color:#fff;}
+
+
+@media screen and(max-width: 600px;){
+	.name,.email{width:100%;float: left;}
+
+
+}
+
+/*css animation start here */
+
+.box{width:67%;height:20px;position:relative;
+	animation-name:hasan;animation-duration:4s;animation-direction:reverse;
+	animation-iteration-count:infinite;border-radius: 5px;font-family: cursive;}
+
+
+@keyframes hasan{
+/*	from{background-color:red;}
+	to{background-color:yellow;}*/
+
+	0%{left: 0;top: 0;}
+
+	25%{left:114px;top:13px;}
+
+	50%{right:114px;top:15px;}
+
+    75%{left:0;top:15px;}
+
+	100%{left:114;top:20px;}
+}
+.connectwius {
+    justify-content: space-between;
+    list-style: none;
+}
+
+ 
+
+li.location {
+    margin: inherit;
+    border-bottom: 1px solid;
+}
+
+li.contactNumber {
+    margin: inherit;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}

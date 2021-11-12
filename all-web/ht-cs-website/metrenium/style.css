@@ -1,0 +1,161 @@
+*{margin:0;padding:0;}
+
+html{scroll-behavior:smooth;}
+
+section {padding:40px 0px;}
+.header_section{width:100%;height:100vh;background-image:linear-gradient(rgba(72, 219, 251, 0.9),rgba(72, 219, 251, 0.9)),url(image/13.jpg);background-repeat:no-repeat;background-size:cover;
+	background-position:center center;}
+
+
+.nav{position:fixed;float:right;background:#00bcd4;top:0;left:0;width:100%;z-index:999;}
+
+.nav li{list-style:none;display:inline-block;padding:20px;}
+
+.nav li a{text-decoration:none;padding:10px;color:#fff;text-transform:uppercase;}
+
+.content{position:absolute;left:50%;top:15%;transform:translate(-50%,50%);color:#fff;font-weight:700;}
+
+.content h1{padding:20px;font-size:34px;color:#123;}
+
+.content p{font-size:18px;margin:30px 10px;color:#123;}
+
+.content a{padding:10px 20px;background:#ddd;color:#123;border:1px solid #48dbfb;font-size:18px;text-decoration:none;
+margin:10px 110px;font-weight:600;}
+
+.content a:hover{background:#48dbfb;border:1px solid #111;border-radius:4px;}
+
+
+/*End Header Section */
+/*Start Review Section*/
+
+.section_Title{text-align: center;font-size:22px;font-family:cursive;margin-bottom:30px;position:relative;}
+
+.section_Title::after{content:"";width:120px;height:3px;position:absolute;top:32px;left:44%;box-shadow:41px 7px 0px orange;
+background:#123;}
+
+.section_Title:nth-child(3)::after{left:35%;}
+
+.review_Section{width:100%;color:#fff;background: #123;}
+
+.all_blocks{max-width:1200px;margin:auto;display:flex;justify-content: center;align-items: center;flex-wrap: wrap;padding:30px 50px;}
+
+.blocks {flex:30%;max-width:400px;box-sizing:border-box;padding:20px 20px;}
+
+.blocks h2{padding:20px 0px;}
+
+.blocks img{width:50px;height:50px;}
+
+
+/*End Review Section*/
+/* Start Service Section  Design */
+
+.service_section{width:100%;}
+
+.service{max-width:1200px;margin:auto;flex-wrap:wrap;justify-content:center;align-items:center;display:flex;}
+
+.service_section_blog_content{flex:80%;display:inline-block;max-width:900px;box-sizing:border-box;position:relative;
+margin:20px 25px;box-sizing:border-box;overflow: hidden;padding:40px 20px;}
+
+.service_section_blog_content h2{display:inline-block;font-family:cursive;}
+
+.service_section_blog_content p{width:50%;font-weight:500;line-height:22px;}
+
+.service_section_blog_content img{width:50%;max-width:421px;height:215px;top:0;right:0;position: absolute;}
+
+.image {float:left;position:absolute;left: 0;top:0;}
+
+/* End Service Section  Design */
+/*Start Testimonial Section */
+
+.testimonial_section{width:100%;background:#ddd;}
+
+.testimonial{width:100%;max-width:1200px;margin:auto;flex-wrap:wrap;justify-content: center;align-items: center;
+display: flex;}
+
+.review{flex:26%;max-width:400px;box-sizing:border-box;}
+
+.review img{width:110px;height:110px;border-radius:50%;padding:20px 0px;}
+
+.review  h3{padding:14px 0px 2px 0px;font-family:cursive;}
+
+.review span{color:coral;}
+
+/*Start Contact Section */
+.contact_section{width:100%;}
+
+.contact{width:calc(100% / 3);margin:auto;padding:12px 40px;}
+
+.contact p{width:100%;margin:auto;}
+
+.info{display:grid;padding:20px 12px;}
+
+.info span{padding:10px 10px;font-weight:700;font-size:22px;color:chocolate;}
+
+ /*contact section social media icon */
+
+
+.middle{position: relative;}
+
+.hasan{position:absolute;bottom:0%;top:20%;width:100%;text-align: center;}
+
+.hasan a img{height:40px;width: 40px;position:absolute;top:30%;left:20%;}
+
+.btn{display:inline-block;width:50px;height:50px;background:#f1f1f1;margin:10px;border-radius:30%;
+	box-shadow: 0 5px 15px -5px #00000070;color:#3498db;overflow:hidden;position:relative;}
+
+.btn i {line-height:55px;font-size:26px;transition: 0.4s linear;}
+
+.btn:hover i{transform: scale(1.3);color:#f1f1f1;}
+
+.btn::before{content:"";position:absolute;width:120%;height:120%;background:#3498db;transform:rotate(45deg);left:-110%;top:90%;}
+
+.btn:hover::before{animation:hasanat 0.7s 1;top:-10%;left:-10%;}
+
+@keyframes hasanat{
+
+	0%{left:-110%;top:90%;}
+
+    50%{left:10%;top:-30%;}
+
+    100%{top:-10%;left:-10%;}
+}
+
+
+/*Responsive Design Code*/
+
+@media (max-width: 980px){
+	.review{flex:50%;}
+
+
+}
+
+@media (max-width: 800px){
+.content {left: 0;top: 0;transform: translate(4%,40%);width: 96%;}
+.blocks{flex:100%;}
+.review {flex: 100%;}
+
+.contact {width: calc(100% / 1);}
+
+.btn i {line-height:63px;font-size:26px;transition: 0.4s linear;}
+
+.btn{width:60px;height:60px;}
+
+
+.nav li{list-style:none;display:inline-block;padding:20px 10px;}
+
+.nav li a{padding:0px;}
+
+
+
+}
+
+@media (max-width:668px){
+	.content{top:0%;}
+    .content a {margin:0px 10px;}
+    .blocks{flex:100%;}
+    .service_section_blog_content img {top: 98px;}
+    .section_Title::after{left:35%;}
+    .review {flex: 100%;}
+
+
+}

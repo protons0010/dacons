@@ -1,0 +1,303 @@
+*{margin:0;padding:0;}
+
+html{scroll-behavior: smooth;transition: all .2s;font-family:sans-serif;}
+section{padding:20px 0px;background-color:#123;}
+
+header{background:linear-gradient(rgba(17, 34, 51, 0.45),rgba(17, 34, 51, 0.45)),url(image/7.jpg);
+	background-size:cover;background-repeat:no-repeat;background-attachment:fixed;background-position:center center;}
+/* start Mobile Menu Harmburger*/
+
+
+.main{margin-left:160px;padding:0px 10px;}
+
+#menu{width:35px;height:30px;margin:30px 0 20px 20px;
+cursor:pointer;}
+
+.bar{height:5px;width:100%;background-color:#b81568;
+display: block;border-radius:5px;transition:0.3s ease;}
+
+#bar1{transform:translateY(-4px);}
+
+#bar3{transform:translateY(4px);}
+
+.nav li a{color: #f4f6f7;text-decoration:none;display: block;}
+
+.nav li a:hover{font-weight:bold;border-bottom:3px solid #121231;
+	transition:.6s;padding-bottom:5px;}
+
+.nav li{list-style: none;padding:16px 0;}
+
+.nav{padding:0;margin:0 20px;transition:0.3s ease;display:none;}
+
+.menu-bg, #menu-bar{top:0;left:0;position: absolute;}
+
+.menu-bg{z-index: 1;width:1px;height:1px;background: #000000a8;border-radius: 21%;transition:0.3s ease;}
+
+ #menu-bar{z-index: 123;}
+
+.change-bg{width:550px;height:540px;transform: translate(-69%,-30%);}
+
+.change .bar{background-color:white;}
+
+.change #bar1{transform:translateY(4px) rotateZ(-45deg);}
+
+.change #bar3{transform: translateY(-6px) rotate(45deg);}
+
+.change #bar2{opacity:0;}
+
+.change{display: block}
+/* End Mobile Menu Harmburger*/
+.welcome{height:87vh;max-width: 100%;text-align:center;color:#dddd;display: inline-block;}
+
+.welcome h2{margin-top: 60px;}
+.Subscribe_button{border:none;outline:none;background-color:#fff;border-radius:5px;color:#123;font-size:16px;
+	border:1px solid #2ecc71;padding:10px 20px;margin-right:20px;
+	margin-left:-23px;}
+
+.Contact_button{border:none;outline: none;background-color:#fff;border-radius:5px;color:#123;font-size:16px;
+	border:1px solid #2ecc71;padding:10px 20px;
+	margin-left: 10px;}
+
+.Contact_button a{text-decoration:none}
+
+.welcome button:hover{background:#2ecc71;}
+
+.first_page{margin-top: 155px;text-align: center;margin-left: 197px;}
+
+/* star service section*/
+
+.service_section{background:linear-gradient(rgba(17, 34, 51, 0.76),rgba(17, 34, 51, 0.76)),url(image/1.jpg);
+	background-size:cover;background-repeat:no-repeat;background-attachment:fixed;background-position:center center;
+	height:100vh;text-align:center;max-width:100%;}
+
+.service_section h1{padding:4px;border-bottom:2.3px solid orange;display:inline-block;margin-top:70px;color:#ddd;}
+.service_section h4{width:500px;text-align:center;margin:auto;margin-top:30px;font-size:13px;color:#ddd;}
+.service_section h2,h3{color:#fff !important;}
+.icon_section{margin-top:90px;}
+
+.first_icon{margin:20px 20px 20px 20px;background: #30bae7;padding:30px;max-width:200px;text-align:center;display:inline-block;
+	         border:1px solid orange;border-radius:5px;transition: all .9s;}
+.first_icon:hover{background: transparent;color:white;cursor: pointer;transform: translateY(-20px);}
+.dollerSign{color:orange;background:#273a71;padding:20px 35px 20px 35px;border-radius:4px;margin-bottom:6px;}
+.first_icon:hover .dollerSign{color:#123;background:orange;}
+.first_icon h2 h3{position: absolute;}
+.first_icon h2{font-size: 20px;margin-top:25px;margin-bottom:20px;text-align:center;}
+.first_icon h3{font-size:13px;}
+
+
+.second_icon{margin:20px 20px 20px 20px;background: #30bae7;padding:30px;max-width:200px;text-align:center;display:inline-block;
+	         border:1px solid orange;border-radius:5px;transition: all .9s;}
+.second_icon:hover{background: transparent;color:white;cursor: pointer;transform: translateY(-20px);}
+.dollerSign{color:orange;background:#273a71;padding:20px 35px 20px 35px;border-radius:4px;margin-bottom:6px;}
+.second_icon:hover .dollerSign{color:#123;background:orange;}
+.second_icon h2 h3{position:absolute;}
+.second_icon h2{font-size: 20px;margin-top:20px;margin-bottom:20px;text-align:center;}
+.second_icon h3{font-size:13px;}
+
+.third_icon{margin:20px 20px 20px 20px;background: #30bae7;padding:30px;max-width:200px;text-align:center;display:inline-block;
+	        border:1px solid orange;border-radius:5px;transition: all .9s;}
+.third_icon:hover{background: transparent;color:white;cursor: pointer;transform: translateY(-20px);}
+.dollerSign{color:orange;background:#273a71;padding:20px 35px 20px 35px;border-radius:4px;margin-bottom:6px;}
+.third_icon:hover .dollerSign{color:#123;background:orange;}
+.third_icon h2 h3{position:absolute;}
+.third_icon h2{font-size: 20px;margin-top:20px;margin-bottom:20px;text-align:center;}
+.third_icon h3{font-size:13px;}
+
+.fourth_icon{margin:20px 20px 0px 20px;background: #30bae7;padding:30px;max-width:200px;text-align:center;display:inline-block;
+	         border:1px solid orange;border-radius:5px;transition: all .9s;}
+.fourth_icon:hover{background: transparent;color:white;cursor: pointer;transform: translateY(-20px);}
+.dollerSign{color:orange;background:#273a71;padding:20px 35px 20px 35px;border-radius:4px;margin-bottom:6px;}
+.fourth_icon:hover .dollerSign{color:#123;background:orange;}
+.fourth_icon h2 h3{position:absolute;}
+.fourth_icon h2{font-size: 20px;margin-top:20px;margin-bottom:20px;text-align:center;}
+.fourth_icon h3{font-size:13px;}
+
+/*end services section */
+
+/*team section*/
+.team_section{background:linear-gradient(rgba(17, 34, 51, 0.66),rgba(17, 34, 51, 0.66)),url(image/7.jpg);
+               background-size:cover;background-repeat:no-repeat;background-attachment:fixed;background-position:center center;
+               height:85vh;max-width:100%;}
+.team_section h2{font-size:18px;text-transform:uppercase;text-align: center;padding-bottom:14px;border-bottom:4px solid orange;
+                 margin-left:45%;display: inline-block;padding-top:15px;color: #fff;}
+.team_section h3{margin:auto;width: 700px;height:40px;padding-top:20px;color:#fff;}
+.team_section h1{color:#fff !important;}
+.team_section h4{color:#1bd6a2 !important;}
+.team_section p{color:#dddd !important;}
+.image{display: inline-block;width: 100%;margin-top:30px;}
+.image img{width:100px;height:100px;border-radius:50%;margin-left:46px;}
+
+.first_image{width:300px;display:inline-block;margin-left:35px;}
+.first_image h1 .name{font-size:19px;display:inline;text-align:center;margin-left:-102px;margin-top:20px;}
+.first_image h4{margin-top:4px;font-size:14px;text-transform:uppercase;margin-bottom:20px;color:aqua;
+	            text-align:center;margin-right:111px;}
+.first_image p{font-size:12px;color:#fff;line-height:15px;font-style:italic;}
+
+.second_image{width:300px;display:inline-block;margin-left:30px;}
+.second_image h1 .name{font-size:20px;display:inline;text-align:center;margin-left:-102px;margin-top:20px;}
+.second_image h4{margin-top:4px;font-size:14px;text-transform:uppercase;margin-bottom:20px;color: aqua;text-align: center;margin-right:111px;}
+.second_image p{font-size:14px;color:black;line-height:15px;font-style:italic;}
+
+.third_image{width:300px;display:inline-block;margin-left:30px;}
+.third_image h1 .name{font-size:20px;display:inline;text-align:center;margin-left:-102px;margin-top:20px;}
+.third_image h4{margin-top:4px;font-size:14px;text-transform:uppercase;margin-bottom:20px;color: aqua;text-align: center;margin-right:111px;}
+.third_image p{font-size:14px;color:black;line-height:15px;font-style:italic;}
+
+.fourth_image{width:300px;display:inline-block;margin-left:30px;}
+.fourth_image h1 .name{font-size:20px;display:inline;text-align:center;margin-left:-102px;margin-top:20px;}
+.fourth_image h4{margin-top:4px;font-size:14px;text-transform:uppercase;margin-bottom:20px;color: aqua;text-align: center;margin-right:111px;}
+.fourth_image p{font-size:14px;color:black;line-height:15px;font-style:italic;}
+
+
+/* start testimonial section */
+
+
+.testimonial_section{background:linear-gradient(rgba(17, 34, 51, 0.50),rgba(17, 34, 51, 0.56)),url(image/6.jpg);
+	                 background-size:cover;background-repeat:no-repeat;background-attachment:fixed;background-position:center center;
+	                 color:#fff;height:85vh;max-width:100%;}
+.testimonial_section h1{font-size:18px;text-transform:uppercase;text-align: center;padding-bottom:9px;
+	                    border-bottom:4px solid green;margin-left:43%;display: inline-block;padding-top:56px;width:300px;
+	                    color:#fff;}
+.testimonial_section h2{margin-left:47%;width:700px;height:40px;padding-top:20px;color:#ddd;}
+
+
+.all_review{text-align:center;}
+
+.first_review{width:424px;height:120px;display:inline-block;margin-left:30px;padding:20px 20px;}
+.content{width:285px;height:190px;float:right;margin-top:40px;}
+
+.content h5{margin-top:2px;margin-left:20px;font-size:20px;}
+.content h3{margin-top:7px;margin-left:20px;font-size:13px;color:antiquewhite !important;}
+.content p{margin-top:18px;font-style:italic;font-size:12px;}
+
+.first_review img{width:100px;height:100px;border-radius:50%;float:left;margin-top:58px;}
+
+
+.second_review{width:424px;height:120px;display:inline-block;margin-left:30px;padding:20px 20px;}
+.content{width:285px;height:190px;float:right;margin-top:40px;}
+
+.content h5{margin-top:2px;margin-left:20px;font-size:20px;}
+.content h3{margin-top:7px;margin-left:20px;font-size:10px;}
+.content p{margin-top:18px;font-style:italic;font-size:12px;}
+
+.second_review img{width:100px;height:100px;border-radius:50%;float:left;margin-top:58px;}
+
+
+/*End testimonial section */
+
+/*start contact section */
+
+.contact_section{max-width:100%;background:#333333d9;height:85vh;position: relative;padding-top:40px;}
+.contact_section h2{text-align:center;text-transform:uppercase;padding:5px;color:white;border-bottom:1px solid orange;
+	position:absolute;top: 12px;right:0;left:0;
+	 margin:auto;width:265px;}
+.contact_section p{text-align:center;width:650px;position: absolute;top:70px;left:0;right:0;margin:auto;color:#fff;}
+
+.contact_form{width:700px;text-align:left;font-size:21px;text-transform:uppercase;position:absolute;top: 90px;left:0;right: 0;margin:auto;color:#ddd;}
+.contact_form input{margin-top:50px;border:none;outline:none;background:#123;color:#fff;padding-right:152px;padding-left:8px;padding-bottom:10px;padding-top:12px;
+	                font-size:14px;box-shadow: 0 5px 5px 0px rgba(0,0,0,0.4);}
+.contact_form textarea{margin-top:4px;border:none;outline: none;background:#123;width:100%;height:50px;color:#ddd;padding-bottom:66px;padding-top:15px;padding-left:10px;
+                         box-shadow: 0 5px 5px 0px rgba(0,0,0,0.7);}
+
+.message button{position: absolute;left:46%;right:50%;top:70%;background:#123;padding-left:35px;padding-right:35px;padding-top:15px;padding-bottom:15px;border:none;outline:none;margin:auto;color:white;
+	border:1px solid orange;border-radius:4px;box-shadow: 0 5px 5px 0px rgba(0,0,0,0.9);}
+
+.message button:hover{background:#123;padding-left:34px;transition: all .5s;}
+
+/*End Contact section */
+
+/*Start responsive design section */
+
+
+
+@media only screen and (max-width:986px){
+   
+    .nav li a {color: #f4f6f7 !important;text-decoration: none;display: block;z-index: 999;}
+     header{width:100%;height:100%;}
+    .service_section{height:123vh;}
+    .service_section h1{margin-top:0px;}
+    .service_section h4{margin-top:10px;}
+	.icon_section{margin-top:0px;padding-bottom:180px;}
+	.fourth_icon{margin-bottom:120px;}
+	.team_section{height:123vh;}
+	.team_section .image h4{text-align: center;}
+    .testimonial_section{height:165vh;}
+   .welcome h2{margin-left: -160px;font-size:20px;}
+   .welcome button:nth-child(1){margin-left: -20px;}
+   .welcome button:nth-child(2){margin-left: -90px;}
+
+
+}
+
+@media only screen and (max-width:780px){
+	.service_section h1{margin-top:10px;}
+	.icon_section{margin-top:20px;}
+	 .welcome h2{margin-left: -160px;font-size:20px;}
+   .welcome button:nth-child(1){margin-left: -20px;}
+   .welcome button:nth-child(2){margin-left: -90px;}
+   
+   .image{display:block;width: 100%;margin-top:10px;}
+   .testimonial_section{height:150vh;}
+   .team_section{height:110vh;}
+   .team_section h3{font-size:15px;text-align: center;}
+   .service_section{height:120vh;}
+   .contact_form{width:400px;margin-bottom:30px;}
+   .contact_section p{width:350px;}
+   	.team_section p{color:#ddd;}
+
+   .message button{margin-top:75px;left:40%;}
+
+   .nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;}
+}
+
+@media only screen and (max-width:685px){
+	 .team_section{height:178vh;}
+	 .team_section h4{text-align: right;margin:auto;margin:5px 0px 15px;}
+	 .first_image,.second_image,.third_image,.fourth_image{margin:19px auto;text-align: center;}
+
+	 
+.nav li a{color:#123;text-decoration:none;display: block;}
+
+.nav li a:hover{font-weight:bold;border-bottom:3px solid #121231;
+	transition:.6s;padding-bottom:5px;}
+
+.nav li{list-style: none;padding:16px 0;}
+
+}
+
+@media only screen and (max-width:628px){
+    .welcome h2{margin-left: -190px;font-size:20px;}
+   .welcome button:nth-child(1){margin-left: -20px;}
+   .welcome button:nth-child(2){margin-left: -122px;}
+
+	.team_section{height:178vh;}
+	.team_section .image{width:628px;text-align: center;}
+	.service_section{height:165vh;}
+	.team_section h2{text-align:center;display:inline-block;margin-left:40%;}
+	.team_section h3{font-size:10px;margin-left:3%;width:100%;text-align:center;}
+	.team_section h4{font-size:10px;margin-left:3%;width:100%;text-align:center;}
+
+	.testimonial_section h1{margin-left:34%height:21px;padding-top:20px;color:aqua;}
+	.testimonial_section h2{margin-left:53%;height:12px;padding-top:5px;color:burlywood;;}
+}
+
+
+@media only screen and (max-width:515px){
+	.service_section{height:190vh;}
+	.service_section h4{font-size:12px;width:80%;}
+
+	.testimonial_section h1{margin-left:34%;width:59%;height:21px;padding-top:20px;color:aqua;}
+	.testimonial_section h2{margin-left:40%;width:59%;height:12px;padding-top:12px;color:burlywood;}
+
+
+	.service_section{height:183vh;}
+	.team_section{height:175vh;display: block;}
+	.first_image,.second_image,.third_image,.fourth_image{display:block;text-align: center;margin-left:20%;}
+
+}
+/*End Responsive Design Section */
+
+

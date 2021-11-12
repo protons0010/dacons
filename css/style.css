@@ -1,0 +1,282 @@
+ /*=============== */
+/* BASIC SETUP */
+/* =============== */
+*{margin:0;padding:0;box-sizing: border-box;}
+
+body {font-family: 'Titillium Web', sans-serif;}
+
+html{font-size:62.5%;scroll-behavior:smooth;}
+
+ul li{list-style: none;}
+
+.clearfix::after{content:"";height:0;width:0;clear:both;display:table;visibility:hidden;}
+
+/* Heading */
+h1{font-size:2.5rem;color: #fff;}
+:focus{outline: 0;}
+/* =============== */
+/* REUSABLE COMPONENTS */
+/* =============== */
+.row{max-width: 114rem;margin:0 9rem;}
+
+section {padding:8rem 0;}
+
+h2{font-size:4rem;text-transform:uppercase;letter-spacing:.3rem;font-weight:600;margin-top:0;margin-bottom:2rem;color:#132;
+	text-align:center;}
+
+h2::after{content:"";display:block;height:.4rem;background:#48dbfb !important;width:8.5rem;margin:auto;margin-top:3rem;}
+
+h3{font-size:2.4rem;text-transform:uppercase;font-weight:600;color:aqua;margin:1rem 0;text-align: center;}
+
+h4{font-size:1.8rem;text-transform:uppercase;font-weight:400;margin-top:2.5rem;}
+
+.Macandos {
+    display: inline-block;
+    font-size: 3.3rem;
+    margin-top: 4.3rem;
+    color: #fff;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.box{padding:1%;}
+
+.box p {font-size:1.4rem;font-weight:300;margin-top:2rem;line-height:1.8rem;color:#f3f3f3;text-align:center;}
+
+
+/* BUTTON */
+
+.btn:link,
+.btn:visited,
+.btn{background: #333;border-bottom:.3rem solid #000;color:#fff;text-decoration:none;text-transform:uppercase;
+	padding:1.5rem 6rem;border-radius:0.3rem;display: inline-block;margin-top: 1rem;}
+
+/* Little Description - Paragraph */
+.little_Description {font-size:1.8rem;width:60%;margin-left:20%;line-height:3rem;text-align:center;}
+
+/* =============== */
+/* HEADER SECTION */
+/* =============== */
+
+
+header{background: linear-gradient(rgba(135, 80, 156, 0.9),rgba(135, 80, 156, 0.9)), url(img/hero-bg.jpg);
+	background-repeat:no-repeat;background-attachment:fixed;background-position:center center;background-size:cover;
+	line-height:3rem;height: 85vh;position: relative;}
+
+.logo{width:auto;height:3.5rem;margin-top:3.5rem;float: left;}
+
+.hero-text-box{width: 114rem;}
+
+/* Main Navigation */
+
+.main-nav {float: right;margin-top:4rem;}
+
+.main-nav li {display: inline-block;margin-left:1rem;}
+.main-nav li:first-child{margin-left: 0;background:#643a79;border-radius:.5rem;}
+
+.main-nav li a:link,
+.main-nav li a:visited{color:#fff;text-decoration: none;text-transform:uppercase;padding:.4rem 1.6rem;display: inline-block;
+	font-size:1.6rem;transition:.5s}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{background:#643a79;border-radius:.4rem;}
+
+/*.main-nav li.active a {background:#643a79;border-radius:.5rem;}*/
+.hero-text-box{position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);text-align: center;}
+.btn-hero:link,
+.btn-hero:visited{background:#eb7d4b;border-color:#c86a40;}
+/*STICKY MAVIGATION */
+
+.sticky{position:fixed;top:0;left:0;width:100%;background:#643a79;padding:1rem 0;
+         box-shadow:0 .2rem .5rem rgba(255,255,255, .9);z-index:9999;}
+.sticky .logo{margin-top:0;}
+.sticky .main-nav{margin-top: .5rem;}
+
+/*Mobile Menu*/
+.mobile_menu span{color:#fff;font-size:4rem;float:right;margin-top:3.6rem;display:none;}
+
+.mobile_menu span:hover{cursor:pointer;}
+
+.overlay{width:0;height:100%;position:fixed;top:0;left:0;
+	background:rgba(0,0,0,0.9);z-index:1;overflow-x:hidden;transition:.5s;}
+
+.overlay_content{position:relative;top:10%;width:100%;text-align:center;}
+
+.overlay a{text-decoration:none;display:block;font-size:3rem;text-transform:uppercase;letter-spacing:3px;color:#999;
+	padding:1rem 0;}
+
+.overlay a:hover{color:#fff;}
+
+
+.closebtn{position:absolute;top:2.5rem;right:4.5rem;font-size:6rem;}
+
+.sticky .mobile_menu span{margin-top:1.7rem;line-height:1rem;}
+
+/* =============== */
+/* SERVICES SECTION */
+/* =============== */
+.service-section{background:linear-gradient(rgba(23, 194, 164, 0.9),rgba(23, 194, 164, 0.9)), url(img/services-bg.jpg);
+                 background-repeat:no-repeat;background-position:center top;background-size:cover;color:#fff;text-align:center;}
+
+.service-section h2::after{background:#14a58c;margin-bottom: 1rem;}
+
+.services-icon{height:12rem;margin-top:4.5rem;margin-bottom:3.5rem}
+
+.section{display:flex;max-width:120rem;width:100%;justify-content:center;align-items:center;flex-wrap:wrap;margin:auto;}
+
+.columns{flex:25%;margin:1rem;max-width:26rem;}
+/* =============== */
+/* TEAM SECTION */
+/* =============== */
+.team-section{background:linear-gradient(rgba(60, 122, 165, 0.9),rgba(35, 93, 134, 0.9)),url(img/home-bg.png);text-align:center;
+	background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment: fixed}
+
+.team-member {margin-top:4.5rem;margin-bottom:0rem;height:20rem;width:20rem;border-radius:50%;}
+
+.social_link li {list-style: none;display:inline-block;margin:1rem .5rem;}
+
+.role{color:#30bae7;font-size:1.6rem;}
+
+.social_link li a:link{color: #fff;}
+
+.social_link li a:link i::before{background:#bdd1df;width:2rem;height:2rem;border-radius:50%;display:inline-block;
+	font-size:2rem;padding:1rem;transition:.5s;}
+
+.social_link li a:hover i::before{background:#ffff;transform:rotate(360deg);}
+
+
+/* =============== */
+/* START SKILL SECTION */
+/* =============== */
+
+.skill-section {background:linear-gradient(rgba(231, 241, 248, 0.9),rgba(231, 241, 248, 0.9)),url(img/skill-bg.jpg);
+	background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed;}
+
+svg.radial-progress circle{stroke-width:5;}
+svg.radial-progress text {fill: #393939;font-size: 1.5rem;}
+svg.web-design circle{stroke: #30bae7;}
+svg.html-css circle{stroke: #d74680;}
+svg.graphic-design circle{stroke: #15c7a8;}
+svg.ui-ux circle{stroke: #eb7d4b;}
+/* =============== */
+/*END SKILL  SECTION */
+/* =============== */
+
+/* =============== */
+/* START PORTFOLIO SECTION */
+/* =============== */
+
+.portfolio-section {text-align:center;background: linear-gradient(rgba(255, 221, 153, 0.6),rgba(255, 221, 153, 0.44)), url(img/portfolio-bg.jpg);
+	               background-repeat: no-repeat;background-size: cover;background-attachment: fixed;background-position:center center;}
+
+.portfolio-filter button{background:#ebc985;font-size:1.8rem;padding:1rem 2rem;border:0;border-radius:.5rem;
+	text-transform:uppercase;color:#3c4761;margin:3rem .5rem 5rem  .5rem;transition:.5s;}                      
+.portfolio-filter button:hover{cursor: pointer;box-shadow:inset .5rem 4rem .5rem #3c47618a;}
+.portfolio-section img{width:100%;height:auto;}  
+.portfolio-section .columns:nth-child(3) {margin-left:0;}
+.portfolio-section .columns{flex:45%;margin:0rem;max-width:60rem;}
+.portfolio-section .btn-load-more{background:#17c2a4;border-color:#14a58c;margin-top:5rem;}
+.portfolio-section .mixitup-control-active{background:#fff;}
+/* =============== */
+/* END PORTFOLIO SECTION */
+/* =============== */
+
+/* =============== */
+/* START TESTIMONIAL SECTION */
+/* =============== */
+.testimonial{background:linear-gradient(rgba(215, 70, 128, 0.9),rgba(215, 70, 128, 0.9)),url(img/testimonial-bg.jpg);
+	background-size:cover;background-repeat:no-repeat;background-position:center center;}
+
+.client-photo{width:10rem;float: left;}
+.client-photo img{height:8rem;border-radius:50%;margin-bottom:3rem;}
+
+.testimonial .columns:nth-child(3) {margin-left:0;}
+
+.testimonial .columns {flex:49%;margin:0rem;max-width:50rem;}
+
+.client-review {width:70%;float:left;}
+
+.client-review .role {width:72%;color: #ffdd99;margin-left:26rem;text-align:right;margin:auto;display:block;font-size:1.5rem;}
+
+.client-review{width:29rem;}
+
+.client-review .role{color:#ffdd99;margin-left:-1rem;}
+
+/* =============== */
+/* END TESTIMONIAL SECTION */
+/* =============== */
+
+/* =============== */
+/* START CONTACT  SECTION */
+/* =============== */
+.contact-section {background:linear-gradient(rgba(60, 84, 153, 0.71),rgba(60, 84, 153, 0.74)),url(img/contact-bg.jpg);
+	          text-align: center;background-size:cover;background-repeat:no-repeat;background-position:center 30%;background-attachment:fixed;}
+
+.contact-section form{margin-top:5rem;width:70%;margin-left:15%;}
+
+.fa-envelope:before {content:"\f0e0";margin-right:10px;}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{background:#273a71;border:.1rem solid #273a71;width:100%;padding:1.5rem;
+	border-radius:.5rem;font-size:1.8rem;margin:.5rem 0;}
+.contact-section form ::placeholder{color:#fff;opacity:1;}
+.contact-section textarea {height: 20rem;}
+.btn-submit {border:0;border-bottom:.5rem;background:#30bae7;}
+
+/* =============== */
+/* END CONTACT SECTION */
+/* =============== */
+/* =============== */
+/* START FOOTER SECTION */
+/* =============== */
+
+.footer-section{background:#344b8e;text-align:center;border-top:.3rem solid rgba(255, 0, 0, 0.2);padding:3rem 0;}
+.footer-section li{display: inline-block;margin:0 2rem;}
+.footer-section li a{color:#fff;text-decoration:none;text-transform:capitalize;font-size:2.4rem;}
+.footer-section li:hover a{color:#30bae7;}
+
+/* =============== */
+/* END FOOTER SECTION */
+/* =============== */
+
+/*Start Responsive Design*/
+
+@media (max-width:1200px){
+   
+   .columns{flex:50%;margin:1rem;max-width:26rem;}
+
+   .portfolio-section .columns{flex:50%;margin:0rem;max-width:60rem;}
+ 
+   .testimonial .columns {flex:50%;margin:0rem;max-width:50rem;}
+
+   .little_Description {font-size:1.8rem;width:90%;margin-left:5%;line-height:3rem;text-align:center;}
+
+   .footer-section li{margin:2rem 2rem;}
+
+   .client-review .role{color:#ffdd99;margin-left:-2rem;font-size:1.4rem;}
+
+   .mobile_menu span{display:block;}
+
+   /*.main-nav{display:none;}*/
+
+}
+
+
+
+@media (max-width:800px){
+   
+   .columns{flex:100%;margin:1rem;max-width:25rem;}
+
+   .portfolio-section .columns{flex:100%;margin:0rem;max-width:50rem;}
+
+   .testimonial .columns {flex:100%;margin:0rem;max-width:50rem;}
+
+   .little_Description {font-size:1.8rem;width:96%;margin-left:2%;line-height:3rem;text-align:center;}
+
+   .footer-section li{margin:2rem 2rem;}
+
+   .client-review .role{color:#ffdd99;margin-left:-5rem;font-size:1.4rem;}
+
+   .box p{margin-top:1rem;}
+}

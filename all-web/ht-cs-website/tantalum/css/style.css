@@ -1,0 +1,293 @@
+:root{
+    /* Main Colors used on our website */
+    /* Last Minute Changes */
+    --second-color:#222222;
+    --stackedone :#f4f6ff;
+    --stackedtwo :#dddddd;
+}
+body{
+    --first-color:#16C0F0;
+    --third-color:#1c9fc3;
+}
+
+html{scroll-behavior: smooth;transition:0.3s;}
+#service,#team {
+    background: var(--stackedone)
+}
+#portfolio,#about {
+    background: var(--stackedtwo)
+}
+::selection{
+    background: var(--first-color);
+    color: var(--second-color);
+}
+img::selection{
+    background: transparent;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    scroll-behavior: smooth;
+    position: relative;
+    height: 100%;
+    font-family: Montserrat , Verdana, Geneva, Tahoma, sans-serif!important;
+}
+.Header{
+    background:url("../img/header-bg.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.Header nav,#footer{
+    padding: 15px;
+    line-height: 35px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    background: var(--second-color);
+}
+
+.Header nav a{
+    color: white;
+    transition: all 0.5s;
+}
+.Header nav a.navbar-brand{
+    font-size: 150%;
+}
+.Header nav a:hover{
+    color: var(--first-color);
+}
+.Header nav .nav-item{
+    margin-left: 10px;
+    position: relative;
+}
+span.bottom_color::before{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    transition: all 1s;
+    transform: scale(0);
+    background: var(--first-color);
+}
+.Header nav .nav-item .nav-link{
+    padding-bottom: 0!important;
+    outline: none;
+}
+
+.Header nav .nav-item .nav-link.active span.bottom_color::before,
+.Header nav .nav-item:hover span.bottom_color::before{
+    transform: scale(1);
+}
+.Header .HeaderOverlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+}
+.Header .HeaderOverlay h1{
+    font-size: 8vmin;
+}
+.MainBtn{
+    transition: all 0.5s;
+    padding: 20px 40px;
+    background: #48dbfb;
+    border: 1px solid var(--third-color);
+    margin: 20px 0;
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+}
+.MainBtn.bgbtn{
+    background: var(--first-color)!important;
+}
+.MainBtn:hover{
+    background: var(--third-color)!important;color:#123;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-nav li{
+    list-style: none;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background: var(--second-color);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.social-nav li:hover{
+    background: var(--first-color);
+}
+.social-nav li a{
+    color: white;
+}
+.social-nav li:hover a{
+    color: var(--second-color);
+}
+
+.SubHeading h1,
+.SubHeading2 h1{
+    color: orange;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.SubHeading h1:before{
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 3px;
+    width: 95%;
+    background:#48dbfb;
+    top: 100%;
+    box-shadow: 15px 5px 0 #18d0e3;
+}
+#services .serviceicon{
+    padding: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#48d;
+    font-size: 25px;
+    color: white;
+}
+#portfolio .row,
+#team .row,
+#services .row{
+    padding: 50px 0;
+}
+#portfolio .card{
+    background: var(--stackedone);
+}
+#portfolio .row .card-text{
+    padding: 0 10px 30px!important;
+}
+
+#portfolio .row .card-text,
+#services .row p{
+    color: rgb(161, 161, 161);
+    padding: 20px 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#portfolio .row .card .card{
+    position: relative;
+}
+#portfolio .row .card .card .HoverContent{
+    position: absolute;
+    background: var(--first-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#portfolio .row .card .card:hover .HoverContent{
+    opacity: 0.9;
+}
+#portfolio .row .card .card:hover .HoverContent i.fa{
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: white;
+    background: var(--third-color);
+}
+#team  .row .card{
+    border:none
+}
+#team  .row .card .card-body{
+    padding: 0!important;
+}
+#team  .row .card img.card-top{
+    border-radius: 50%;
+    border: 8px solid var(--first-color);
+    margin: 40px;
+    height: 250px;
+}
+#team .row .card img.card-top:hover{
+    filter: blur(2px);
+}
+
+.card-top {
+  height: 192px;
+  width: 100%;
+}
+
+#team .row .card .TeamImage{
+    position: relative;
+}
+#team .row .card .TeamImage .Hovercontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: all 1s;
+}
+#team .row .card .TeamImage:hover .Hovercontent {
+    opacity: 1;
+}
+#team .row .card-text p{
+    color: rgb(161, 161, 161);
+    padding-bottom: 20px;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+#contact{
+    background: url("../img/map-image.png");
+    background-size: cover;
+    background-color: rgba(10, 10, 10, 0.85);
+    color: white!important;
+}
+#contact form{
+    padding: 30px 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+#contact form .row .col-md-6 div{
+    margin: 20px 0;
+}
+#contact form .row .col-md-6 div input{
+    padding: 20px;
+    height: 50px;
+}
+#contact form .row .col-md-6 div textarea{
+    height: 190px;
+}
+#footer{
+    color: white;
+}
+#footer .footer-links a{
+    padding-left: 10px;
+}
+#footer ul{
+    margin: 0!important;
+}
+
+
+@media (min-width: 576px){
+.col-sm-4 {flex: 0 0 33.333333%;max-width: 26.22%;}
+
+.social-nav li{margin:5px;width:30px;height:30px;}
+
+#team .row .card img.card-top { margin: 5px;height:293px;}
+
+}

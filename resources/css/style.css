@@ -1,0 +1,82 @@
+ /*=============== */
+/* BASIC SETUP */
+/* =============== */
+*{margin:0;padding:0;box-sizing: border-box;}
+
+body {font-family: 'Titillium Web', sans-serif;}
+
+html{scroll-behavior:smooth;}
+
+
+/*start portfolio section design from here*/
+.clearfix::after{content:"";height:0;width:0;clear:both;display:table;visibility:hidden;}
+
+.row{max-width: 114rem;margin:0 9rem;}
+
+ 
+
+.our_services{font-size:2rem;text-transform:uppercase;letter-spacing:.3rem;font-weight:600;margin-top:0;margin-bottom:2rem;color:#132;
+	text-align:center;}
+
+.our_services::after{content:"";display:block;height:.4rem;background:#48dbfb !important;width:8.5rem;margin:auto;margin-top:3rem;}
+
+.slider_box{padding:1%;}
+
+.slider_box p {font-size:1.3rem;font-weight:300;margin-top:2rem;line-height:1.8rem;color:#f3f3f3;text-align:center;}
+
+ 
+/* Little Description - Paragraph */
+.little_Description {font-size:1.2rem;width:60%;margin-left:20%;line-height:3rem;text-align:center;}
+ 
+.section{display:flex;max-width:120rem;width:100%;justify-content:center;align-items:center;flex-wrap:wrap;margin:auto;}
+
+.columns{flex:25%;margin:1rem;max-width:26rem;}
+ 
+/* =============== */
+/* START PORTFOLIO SECTION */
+/* =============== */
+
+.portfolio-section {text-align:center;background: linear-gradient(rgba(255, 221, 153, 0.6),rgba(255, 221, 153, 0.44)), url(img/portfolio-bg.jpg);
+	               background-repeat: no-repeat;background-size: cover;background-attachment: fixed;background-position:center center;}
+
+.portfolio-filter button{background:#ebc985;font-size:1.3rem;padding:0.8rem 1.2rem;border:0;border-radius:.5rem;
+	text-transform:uppercase;color:#3c4761;margin:3rem .5rem 5rem  .5rem;transition:.5s;}                      
+.portfolio-filter button:hover{cursor: pointer;box-shadow:inset .5rem 4rem .5rem #3c47618a;}
+.portfolio-section img{width:100%;height:auto;}  
+.portfolio-section .columns:nth-child(3) {margin-left:0;}
+.portfolio-section .columns{flex:45%;margin:0rem;max-width:60rem;}
+.portfolio-section .btn-load-more{background:#28443f;border-color:#14a58c;margin-top:5rem;}
+.portfolio-section .mixitup-control-active{background:#fff;}
+
+.web_title{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;text-transform: uppercase;
+}
+/* =============== */
+/* END PORTFOLIO SECTION */
+/* =============== */
+ 
+ 
+
+/*Start Responsive Design*/
+
+@media (max-width:1200px){
+   
+   .columns{flex:50%;margin:1rem;max-width:26rem;}
+
+   .portfolio-section .columns{flex:50%;margin:0rem;max-width:60rem;}
+
+   .little_Description {font-size:1.8rem;width:90%;margin-left:5%;line-height:3rem;text-align:center;}
+
+}
+
+
+@media (max-width:800px){
+   
+   .columns{flex:100%;margin:1rem;max-width:25rem;}
+
+   .portfolio-section .columns{flex:100%;margin:0rem;max-width:50rem;}
+
+   .little_Description {font-size:1.8rem;width:96%;margin-left:2%;line-height:3rem;text-align:center;}
+
+   .slider_box p{margin-top:1rem;}
+}

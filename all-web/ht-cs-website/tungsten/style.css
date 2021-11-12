@@ -1,0 +1,179 @@
+*{margin:0;padding:0;}
+
+body{font-family:sans-serif;}
+ 
+html{scroll-behavior:smooth;}
+
+ section {padding:100px;}
+
+.section_title{text-align: center;justify-content: center;align-items: center;margin-bottom:20px;left:40%;
+overflow: hidden;}
+
+.section_Content{text-align: center;justify-content: center;align-items: center;margin-bottom:20px;left:40%;
+overflow: hidden;}
+
+
+img{width:20px;height:20px;}
+
+.header_Section{height:85vh;background:#ddd;position:relative;}
+
+
+.logo {position: absolute;left:6%;top:2%;width:20%;margin:auto;display:inline-block;}
+
+.logo  img{width:80px;height:80px;}
+
+.unorderedList ul {list-style:none;text-decoration:none;display:inline-block;position:absolute;top:4%;}
+
+.unorderedList ul li{display:inline-block;}
+
+.unorderedList ul li:nth-child(2){background:green;padding:12px 3px;border-radius:7px;font-size:17px;font-weight:600;color:#ddd;
+font-variant: diagonal-fractions;}
+
+.unorderedList ul li a{text-decoration:none;padding:10px;color:#123;font-family:cursive;}
+
+.sm{display:inline-block;top:4%;right:15%;position:absolute;}
+
+.sm a i{padding:10px;background-color:#48dbfa;margin-top:2px;border-radius:12px;}
+
+.sm a i:hover{background:#00bcd4;}
+
+.header_middle {width:500px;position:absolute;left:-40%;right:0;top:40%;margin:auto;}
+
+.header_middle img{width:100%;height:100%;float:right;position:absolute;
+	right:-120%;top:-5%;margin:auto;}
+
+.header_middle button{background:#9e9e9e94;padding:20px;margin-top:20px;border:1px solid;}
+
+.header_middle button:nth-child(2){background:#fff;}
+
+.header_middle button a{text-decoration:none;font-family:cursive;font-size:17px;color:#123;font-weight:700;}
+
+/*End Header Section*/
+/*Start Skills Section*/
+
+.skills_Section{position:relative;background:#fff;}
+
+
+.block{max-width:900px;width:100%;display:flex;margin:auto;justify-content:center;align-items:center;flex-wrap:wrap;}
+
+.sub_blocks{flex:30.33%;max-width:320px;box-sizing:border-box;}
+
+.sub_blocks2 {max-width:287px;background:#ddd;margin:14px;height:190px;padding:10px; text-align: left;
+  box-shadow:2px 5px 16px #ddd, 0px 1px 1px #ddd;}
+
+.blocks_header span{
+    background: azure;
+    padding: 10px;
+    margin: 10px;
+}
+
+i.fa.fa-users,
+i.fa.fa-cc-discover,
+i.fa.fa-percent {font-size: 60px;}
+
+
+.blocks_header {height:30px;width:30px;padding: 10px;border-radius:50%;background:#12da0e;}
+
+.blockTitle  {margin: 20px 0px 10px 5px;font-size: 17px;}
+
+.sub_blocks2  p{margin:20px 0px;}
+
+.sub_blocks2 a{text-decoration:none;margin:10px 0px 0px 0px;}
+
+/*End Service section*/
+/*start portfolio section */
+.portfolio_section{background:#ddd;}
+
+
+.inner_Width{max-width:1200px;width:100%;justify-content:center;align-items:center;}
+
+.button{background:rgba(0,0,0,0.01);text-align:center;display:block;margin:20px auto;color:#121; 
+height: 40px;line-height: 30px;font-size: 15px;font-weight: 700;letter-spacing: 0.5px;text-transform: uppercase;
+    box-shadow: 4px 4px 6px -1px rgba(0,0,0,0.3), -4px -4px 6px -1px rgba(255,255,255,1);
+    border-radius: 7px;
+    border: 1px solid rgba(0,0,0,0.01);}
+
+.iframe{text-align:center;display:block;width:40%;margin:auto;height:300px;}
+/*________________________*/
+/*Start Sign page section*/
+/*________________________*/
+
+.sign_up_page{background:linear-gradient(#11223359,#112233f7),url(image/3.jpg);background-position:center top ;background-size:cover;
+  background-attachment:fixed;transition:1.2s;}
+
+#cointainer{max-width:800px;text-align: center;}
+
+.header{margin-bottom:20px;text-align: center;}
+
+.header h3{color:#fff;}
+
+.form{background:#dddd;width:300px;margin-left:29px;text-align: center;margin:auto;
+	padding:20px;border-radius:9px;opacity:0.9;color:#123;font-weight:700;font-size:16px;}
+
+.form h5{margin-top:20px;text-align: left;padding-right: 10px;width:104px;}
+
+.form input{border:none;outline:none;background:#dddd;padding:10px;color:black;margin-left:20%;margin-right:20%;margin-top:10px;
+	border:1px solid #123;border-radius:24px;font-size:13px;}
+
+.form input:hover{border-bottom:1px solid #bbbab6;border-radius:24px;background:#c9e1e8;}
+
+button{border:1px solid aqua;border-radius:5px;padding:5px;color:#ddd;background-color:#000000;}
+
+.header_content h3{text-transform: uppercase;font-style: bold;font-weight:200px;margin-left: 20px;margin-top: 80px;}
+
+
+.btn{background:rgba(0,0,0,0.01);width:8rem;margin:20px;outline:none;border:none;color:#121;display: inline-block;
+height: 40px;line-height: 40px;font-size: 15px;font-weight: 700;letter-spacing: 0.5px;text-transform: uppercase;
+    box-shadow: 4px 4px 6px -1px rgba(0,0,0,0.3), -4px -4px 6px -1px rgba(255,255,255,1);border-radius: 7px;
+  border: 1px solid rgba(0,0,0,0.01);}
+
+.btn:hover{cursor: pointer;transform: scale(1.1);}
+
+.btn:hover::before{content: ""; position: absolute;height:50%;width:50%;transform: translate(-50%,-50%);}
+/*End Sign up Design */
+/*Start Footer Section*/
+.footer_Section{background:#123;}
+
+.Contact_section{width:1200px;color:#dddd;justify-content:center;align-items:center;display:flex;flex-wrap:wrap;margin:auto;}
+
+.contact{flex:25%;max-width:250px;box-sizing:border-box;}
+
+.contact ul{list-style:none;}
+
+.contact li{list-style:none;padding:10px;}
+
+.contact ul li{padding:10px;}
+
+.footer_A {color:#123;background:aqua;padding:10px;border-radius:22px;}
+
+.footer_A:hover{margin-top:-12px;}
+
+i.fa.fa-linkedin {padding:30px 0px;}
+
+
+/*End Footer Section*/
+
+@media  (max-width:780px){
+	.header{margin-left:0px;}
+	.header h3{margin-left: -335px;}
+	.form{margin-left:0px;}
+     #cointainer {
+    max-width: 800px;
+    text-align: center;
+    margin-left:30px;
+}
+
+
+@media (max-width:520px){
+	.header{margin-left:0px;}
+	.header h3{margin-left: -111px;}
+	.form{margin-left:0px;}
+     #cointainer {
+    max-width: 800px;
+    text-align: center;
+    margin-left:30px;
+}
+
+/*________________________
+End Sign page section
+________________________ 
